@@ -16,7 +16,7 @@ http.listen(process.env.PORT || 3000, function(){
 });
 */
 
-var express = require('express');
+/*var express = require('express');
 var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
@@ -58,4 +58,30 @@ io.on('connection', function(socket){
      http.listen(process.env.PORT || 3000, function(){
      console.log('listening on', http.address().port);
     });
+});
+*/
+
+var PORT = 3000;
+
+// Express is a web framework for node.js
+// that makes nontrivial applications easier to build
+var express = require('express');
+
+// Create the server instance
+var app = express();
+
+// Print logs to the console and compress pages we send
+app.use(express.logger());
+app.use(express.compress());
+
+// Return all pages in the /static directory
+// whenever they are requested at '/'
+// e.g., http://localhost:3000/index.html
+// maps to /static/index.html on this machine
+app.use(express.static(__dirname + '/static'));
+
+// Start the server
+var port = process.env.PORT || PORT; // 80 for web, 3000 for development
+app.listen(port, function() {
+	console.log("Node.js server running on port %s", port);
 });
