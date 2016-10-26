@@ -1,15 +1,13 @@
 /* applies to anything of class "example-class-selector" */
 
-<style>
-
 body {font-family: "Lato", sans-serif;}
 ul.tab {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    border: 1px solid #7B68EE;
-    background-color: #2F4F4F;
+    border: 1px solid #ff8080;
+    background-color: #800000;
 }
 
 /* Float the list items side by side */
@@ -28,21 +26,21 @@ ul.tab li a {
 
 /* Change background color of links on hover */
 ul.tab li a:hover {
-    background-color: #ddd;
+    background-color: #ffe6e6;
 }
 
 /* Create an active/current tablink class */
 ul.tab li a:focus, .active {
-    background-color:  #00FFFF;
+    background-color:  #ff8080;
 }
 
 /* Style the tab content */
 .tabcontent {
-    display: none;
+    /*display: none;*/
     padding: 6px 12px;
     border: 1px solid #F0FFF0;
     border-top: none;
-    display: none;
+    /*display: none;*/
     -webkit-animation: fadeEffect 1s;
     animation: fadeEffect 1s;
 }
@@ -60,13 +58,7 @@ li {
     border-right: 1px solid #bbb;
 }
 
-li:last-child {
-    border-right: none;
-}
 
-
-</style>
-<body>
 
 
 /* applies to any <p> descendants of an element of class "example-class-selector" */
@@ -82,5 +74,9 @@ body {
      padding: 20px;
 }
 
+.highlighted{
+    background-color: red;
 
-</body>
+}
+
+
