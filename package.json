@@ -4,8 +4,9 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "ejs": "2.3.3",
     "express": "4.14.0",
-    "ejs": "2.3.3"
+    "express3-handlebars": "^0.5.2"
   },
   "devDependencies": {},
   "scripts": {
