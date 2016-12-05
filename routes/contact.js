@@ -1,4 +1,4 @@
 
 exports.view = function(req, res){
-    res.render('skills');
+    res.render('contact');
 };
