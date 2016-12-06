@@ -7,7 +7,7 @@ var app = express();
 
 var Home = require('./routes/home');
 var Projects = require('./routes/projects');
-var Resume = require('./routes/resume');
+var Resume = require('./routes/Resume');
 var Contact = require('./routes/contact');
 var Fetch = require('./routes/Fetch');
 var Reflectionship = require('./routes/Reflectionship');
