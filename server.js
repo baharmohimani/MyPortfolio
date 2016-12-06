@@ -9,7 +9,7 @@ var Home = require('./routes/home');
 var Projects = require('./routes/projects');
 var Resume = require('./routes/resume');
 var Contact = require('./routes/contact');
-var RedCross = require('./routes/RedCross');
+var Fetch = require('./routes/Fetch');
 var Reflectionship = require('./routes/Reflectionship');
 var TasteBuddy = require('./routes/TasteBuddy');
 
@@ -23,7 +23,7 @@ app.get('/', Home.view);
 app.get("/Projects.html", Projects.view);
 app.get("/Resume.html", Resume.view);
 app.get("/Contact.html", Contact.view);
-app.get("/RedCross.html", RedCross.view);
+app.get("/Fetch.html", Fetch.view);
 app.get("/Reflectionship.html", Reflectionship.view);
 app.get("/TasteBuddy.html", TasteBuddy.view);
 

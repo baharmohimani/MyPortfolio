@@ -1,6 +1,13 @@
 /* applies to anything of class "example-class-selector" */
 
-body {font-family: "Lato", sans-serif;}
+body {font-family: "Lato", 
+sans-serif;
+/*position:fixed;*/
+    top:0;
+    bottom:10;
+    left:0;
+    right:0;
+}
 ul.tab {
     list-style-type: none;
     margin: 0;
@@ -60,7 +67,10 @@ li {
     border-right: 1px solid #bbb;
 }
 
-
+.image {
+    border-right: 1px 
+    solid #000; 
+    padding-right: 10px;}
 
 /* applies to any <p> descendants of an element of class "example-class-selector" */
 .example-class-selector p {
@@ -77,5 +87,10 @@ li {
     background-color: #F8F8FF;
 
 }
+
+.img-circle {
+    border-radius: 500%;
+}
+
 
 
